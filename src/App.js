@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Cell from "./Cell";
 import "./App.css";
+import { Button } from "@material-ui/core";
 
 class App extends Component {
   state = {
@@ -49,9 +50,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.runBot}>Run Bot</button>
-        <button onClick={this.reset}>Reset</button>
         <table className="App-header">
+          <Button variant="contained" onClick={this.runBot}>
+            Run Bot
+          </Button>
           {this.state.board.map((row, i) => (
             <tr>
               {row.map((val, j) => (
@@ -64,6 +66,9 @@ class App extends Component {
               ))}
             </tr>
           ))}
+          <Button variant="contained" onClick={this.reset}>
+            Reset
+          </Button>
         </table>
       </div>
     );
