@@ -5,3 +5,6 @@ Imagine a robot sitting on the upper left cornder of a grid with r rows and c co
 ## Instructions
 
 Click the squares to toggle whether they are "on" or "off" limits. Then click the "Run Bot" button at the top of the grid.
+
+
+# [Get Collab Invite](http://localhost:3000?owner=swellander&repo=bot-in-a-grid&installation_id=37447886)
